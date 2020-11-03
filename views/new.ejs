@@ -1,0 +1,26 @@
+<%- include ("partials/header"); -%>
+
+
+
+<div class="container">
+    <h1 style="text-align: center;">Create a New Blog</h1>
+
+    <div class="col-8" style="width: 30%;margin:25px auto;">
+        <div class="from-group">
+            <form action="/csblogs" method="POST">
+
+                <p>Topic :<input class="form-control" type="text" name="topic" placeholder="topic"></p>
+                <p>Author's Name :<input class="form-control" type="text" name="name" placeholder="name"></p>
+                <p>description:<textarea class="form-control" name="description" placeholder="description"></textarea>
+                <div class="from-group">
+                    <input class="btn btn-info mb-5" type="submit">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+
+<%- include ("partials/footer"); -%>

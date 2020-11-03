@@ -1,0 +1,23 @@
+<%- include ("partials/header"); -%>
+
+<div class="container">
+    <h1 style="text-align: center;">Edit Blog  <%= csblog.topic %></h1>
+
+    <div class="col-8" style="width: 30%;margin:25px auto;">
+        <div class="from-group">
+            <form action="/csblogs/<%=csblog._id %>?_method=PUT" method="POST">
+
+                <p>Topic :<input class="form-control" type="text" name="csblog[topic]" value="<%=csblog.topic%>"></p>
+                <p>Author's Name :<input class="form-control" type="text" name="csblog[name]" value="<%=csblog.name%>"></p>
+                <p>description:<input class="form-control" type="textarea" name="csblog[description]" value="<%=csblog.description%>"></p>
+                <div class="form-group mb-2">
+                    <button class="btn btn-large btn-info btn-block">Update</button>
+                    </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+<%- include ("partials/footer"); -%>

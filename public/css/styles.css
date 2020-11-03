@@ -1,0 +1,64 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    color: white;
+     text-decoration:none; 
+     cursor:pointer; 
+  }
+
+
+body{
+    margin: 0;
+  
+}
+
+#in{
+    text-align: justify;
+}
+
+#intro{
+
+    padding:10px;
+
+}
+
+#big{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.fon{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+}
+
+#colo{
+  background: #61bbbf;
+  color: whitesmoke;
+}
+
+#lan{
+  background: #61bbbf;
+  color:whitesmoke;
+  
+}

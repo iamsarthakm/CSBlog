@@ -1,0 +1,42 @@
+<%- include ("partials/header"); -%>
+
+
+
+
+<div class="container">
+
+    <div class="row" style="display: flex;flex-wrap: wrap;">
+
+        <% csblogs.forEach(function(csblog){ %>
+
+
+        <div class="col col-lg-4 rounded">
+
+
+            <div class="card text-white bg-info mb-3" style="max-width: 25rem;">
+                <div class="card-header">
+                    <h2 class="fon pt-2">Topic: <a><%= csblog.topic%></a></h2>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <p class="fon">By <%= csblog.name%></p>
+                    </h5>
+                    <p class="card-text" id="big" class="fon"><%= csblog.description%></p>
+                </div>
+
+
+                <form action="/csblog/<%= csblog._id %>" method="GET">
+                    <a class="btn btn-light pb-1 mb-3 ml-3" href="csblogs/<%= csblog._id %>">Show More</a>
+                </form>
+
+
+
+
+            </div>
+
+        </div>
+        <% }); %>
+
+    </div>
+
+    <%- include ("partials/footer"); -%>
