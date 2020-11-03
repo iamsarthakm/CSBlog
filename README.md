@@ -5,13 +5,13 @@ Intro-
 
 Tech Stack Used-
 1.	 Nodejs express
-2.	MongoDB
+2.	 MongoDB
 3.	 HTML+CSS
 4.	 JavaScript
 
 Dependencies Used-
 1.	Mongoose
-2.	mongodb
+2.	Mongodb
 3.	Method-override
 4.	Body-parser
 5.	Ejs
